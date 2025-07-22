@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #1e90ff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+
+  input {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+}
